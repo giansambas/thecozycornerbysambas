@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     "The Cozy Corner is a cozy online bookstore offering hand-picked book recommendations for readers who love warm and thoughtful stories.",
 
       verification: {
-    google: "googlebf5154ab7866b69e.html",
+    google: "nSpj65fsEFPt-tWwVo7ghajdLOXnflJ-e-KAeY0Q7as",
       },
 };
 
