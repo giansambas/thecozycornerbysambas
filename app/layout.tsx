@@ -43,19 +43,23 @@ export default function RootLayout({
             </Link>
 
             <nav className="flex gap-6 text-sm text-emerald-700">
-              <Link href="/" className="hover:text-emerald-900">
-                Home
-              </Link>
-              <Link href="/about" className="hover:text-emerald-900">
-                About
-              </Link>
-              <Link href="/books" className="hover:text-emerald-900">
-                Books
-              </Link>
-              <Link href="/contact" className="hover:text-emerald-900">
-                Contact
-              </Link>
-            </nav>
+  <Link href="/" className="hover:text-emerald-900">
+    Home
+  </Link>
+  <Link href="/about" className="hover:text-emerald-900">
+    About
+  </Link>
+  <Link href="/books" className="hover:text-emerald-900">
+    Books
+  </Link>
+  <Link href="/recommendations" className="hover:text-emerald-900">
+    Recommendations
+  </Link>
+  <Link href="/contact" className="hover:text-emerald-900">
+    Contact
+  </Link>
+</nav>
+
           </div>
         </header>
 
