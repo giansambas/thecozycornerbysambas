@@ -20,6 +20,10 @@ export const metadata: Metadata = {
   },
   description:
     "The Cozy Corner is a cozy online bookstore offering hand-picked book recommendations for readers who love warm and thoughtful stories.",
+
+      verification: {
+    google: "googlebf5154ab7866b69e.html",
+      },
 };
 
 export default function RootLayout({
@@ -52,6 +56,7 @@ export default function RootLayout({
   <Link href="/books" className="hover:text-emerald-900">
     Books
   </Link>
+
   <Link href="/contact" className="hover:text-emerald-900">
     Contact
   </Link>
