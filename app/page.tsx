@@ -35,12 +35,12 @@ export default function Home() {
           </div>
         </div>
 
-        {/* soft background shapes */}
+        {/* soft decorative shapes */}
         <div className="absolute -top-32 -left-32 h-80 w-80 rounded-full bg-emerald-100 opacity-50 blur-3xl" />
         <div className="absolute top-1/3 -right-32 h-80 w-80 rounded-full bg-sky-100 opacity-50 blur-3xl" />
       </section>
 
-      {/* PHILOSOPHY SECTION */}
+      {/* PHILOSOPHY / FEATURE SECTION */}
       <section className="bg-sky-50">
         <div className="mx-auto max-w-6xl px-6 py-24 grid gap-16 md:grid-cols-2 items-center">
           <div>
@@ -51,8 +51,8 @@ export default function Home() {
             <p className="text-base leading-relaxed text-emerald-700 mb-6">
               The Cozy Corner isn’t about endless scrolling or overwhelming
               choices. It’s about slowing down and discovering books that feel
-              like home — stories you return to when you want comfort, insight,
-              or quiet joy.
+              like home — stories you return to for comfort, insight, or quiet
+              joy.
             </p>
             <Link
               href="/books"
@@ -86,22 +86,37 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="bg-emerald-50 border-t border-emerald-100">
-        <div className="mx-auto max-w-6xl px-6 py-24 text-center">
-          <h2 className="text-3xl font-semibold text-emerald-900 mb-4">
-            Find Your Next Cozy Read
-          </h2>
-          <p className="mx-auto max-w-xl text-base leading-relaxed text-emerald-700 mb-8">
-            Whether you’re looking for comfort, inspiration, or a quiet escape,
-            The Cozy Corner is here to guide you.
-          </p>
-          <Link
-            href="/books"
-            className="inline-block rounded-full bg-emerald-600 px-12 py-3 text-sm font-medium text-white hover:bg-emerald-700"
-          >
-            Start Browsing
-          </Link>
+      {/* FIND YOUR NEXT COZY READ (PRIMARY CTA) */}
+      <section className="bg-gradient-to-b from-sky-50 to-emerald-50">
+        <div className="mx-auto max-w-6xl px-6 py-28">
+          <div className="relative overflow-hidden rounded-3xl bg-white border border-emerald-100 px-8 py-20 text-center shadow-sm">
+            {/* decorative glow */}
+            <div className="absolute -top-24 -left-24 h-72 w-72 rounded-full bg-emerald-100 opacity-40 blur-3xl" />
+            <div className="absolute -bottom-24 -right-24 h-72 w-72 rounded-full bg-sky-100 opacity-40 blur-3xl" />
+
+            <div className="relative z-10">
+              <p className="mb-3 text-sm uppercase tracking-widest text-emerald-600">
+                Start your next chapter
+              </p>
+
+              <h2 className="text-3xl md:text-4xl font-semibold text-emerald-900 mb-6">
+                Find Your Next Cozy Read
+              </h2>
+
+              <p className="mx-auto max-w-xl text-base leading-relaxed text-emerald-700 mb-10">
+                Explore a carefully curated collection of books chosen for
+                comfort, warmth, and stories you’ll want to return to again and
+                again.
+              </p>
+
+              <Link
+                href="/books"
+                className="inline-flex items-center gap-2 rounded-full bg-emerald-600 px-14 py-4 text-sm font-medium text-white shadow-md hover:bg-emerald-700"
+              >
+                Browse the Collection →
+              </Link>
+            </div>
+          </div>
         </div>
       </section>
     </>
