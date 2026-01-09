@@ -1,3 +1,6 @@
+"use client";
+
+import { useState } from "react";
 import Image from "next/image";
 
 const books = [
@@ -32,26 +35,40 @@ const books = [
 ];
 
 export default function RecommendationsPage() {
+  const [query, setQuery] = useState("");
+
+  const filteredBooks = books.filter((book) =>
+    book.title.toLowerCase().includes(query.toLowerCase())
+  );
+
   return (
     <section className="bg-sky-50">
       <div className="mx-auto max-w-6xl px-6 py-24">
         {/* Page Header */}
-        <div className="mb-16 text-center">
-          <p className="mb-3 text-sm uppercase tracking-widest text-emerald-600">
-            Hand-picked for you
-          </p>
+        <div className="mb-12 text-center">
           <h1 className="text-4xl font-semibold text-emerald-900 mb-4">
-            Cozy Book Recommendations
+            Book Recommendations
           </h1>
           <p className="mx-auto max-w-2xl text-emerald-700">
-            A small, intentional selection of books chosen for their warmth,
-            depth, and lasting impact.
+            Search and explore a small collection of carefully curated cozy
+            reads.
           </p>
+        </div>
+
+        {/* Search Bar */}
+        <div className="mb-16 flex justify-center">
+          <input
+            type="text"
+            placeholder="Search books by title..."
+            value={query}
+            onChange={(e) => setQuery(e.target.value)}
+            className="w-full max-w-md rounded-full border border-emerald-200 bg-white px-5 py-3 text-sm text-emerald-900 placeholder-emerald-400 focus:outline-none focus:ring-2 focus:ring-emerald-300"
+          />
         </div>
 
         {/* Book Grid */}
         <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-4">
-          {books.map((book) => (
+          {filteredBooks.map((book) => (
             <div
               key={book.title}
               className="group rounded-2xl bg-white border border-emerald-100 p-5 shadow-sm hover:shadow-md transition"
