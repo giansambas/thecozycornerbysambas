@@ -21,7 +21,7 @@ export default function Home() {
 
           <div className="mt-10 flex justify-center gap-4">
             <Link
-              href="/books"
+              href="/recommendations"
               className="rounded-full bg-emerald-600 px-10 py-3 text-sm font-medium text-white shadow-sm hover:bg-emerald-700"
             >
               Explore Books
@@ -40,7 +40,7 @@ export default function Home() {
         <div className="absolute top-1/3 -right-32 h-80 w-80 rounded-full bg-sky-100 opacity-50 blur-3xl" />
       </section>
 
-      {/* PHILOSOPHY / FEATURE SECTION */}
+      {/* PHILOSOPHY SECTION */}
       <section className="bg-sky-50">
         <div className="mx-auto max-w-6xl px-6 py-24 grid gap-16 md:grid-cols-2 items-center">
           <div>
@@ -55,10 +55,10 @@ export default function Home() {
               joy.
             </p>
             <Link
-              href="/books"
+              href="/recommendations"
               className="text-sm font-medium text-emerald-700 underline underline-offset-4 hover:text-emerald-900"
             >
-              Browse our curated picks →
+              Browse our recommendations →
             </Link>
           </div>
 
@@ -81,40 +81,6 @@ export default function Home() {
                 From layout to colors, everything is designed to feel gentle,
                 inviting, and easy to explore.
               </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* FIND YOUR NEXT COZY READ (PRIMARY CTA) */}
-      <section className="bg-gradient-to-b from-sky-50 to-emerald-50">
-        <div className="mx-auto max-w-6xl px-6 py-28">
-          <div className="relative overflow-hidden rounded-3xl bg-white border border-emerald-100 px-8 py-20 text-center shadow-sm">
-            {/* decorative glow */}
-            <div className="absolute -top-24 -left-24 h-72 w-72 rounded-full bg-emerald-100 opacity-40 blur-3xl" />
-            <div className="absolute -bottom-24 -right-24 h-72 w-72 rounded-full bg-sky-100 opacity-40 blur-3xl" />
-
-            <div className="relative z-10">
-              <p className="mb-3 text-sm uppercase tracking-widest text-emerald-600">
-                Start your next chapter
-              </p>
-
-              <h2 className="text-3xl md:text-4xl font-semibold text-emerald-900 mb-6">
-                Find Your Next Cozy Read
-              </h2>
-
-              <p className="mx-auto max-w-xl text-base leading-relaxed text-emerald-700 mb-10">
-                Explore a carefully curated collection of books chosen for
-                comfort, warmth, and stories you’ll want to return to again and
-                again.
-              </p>
-
-              <Link
-                href="/books"
-                className="inline-flex items-center gap-2 rounded-full bg-emerald-600 px-14 py-4 text-sm font-medium text-white shadow-md hover:bg-emerald-700"
-              >
-                Browse the Collection →
-              </Link>
             </div>
           </div>
         </div>

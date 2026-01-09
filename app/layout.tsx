@@ -52,9 +52,6 @@ export default function RootLayout({
   <Link href="/books" className="hover:text-emerald-900">
     Books
   </Link>
-  <Link href="/recommendations" className="hover:text-emerald-900">
-    Recommendations
-  </Link>
   <Link href="/contact" className="hover:text-emerald-900">
     Contact
   </Link>
