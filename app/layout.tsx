@@ -19,22 +19,7 @@ export const metadata: Metadata = {
     template: "%s | The Cozy Corner",
   },
   description:
-    "The Cozy Corner is a cozy online bookstore offering hand-picked book recommendations for readers who love comfort reads and thoughtful stories.",
-  keywords: [
-    "The Cozy Corner",
-    "online bookstore",
-    "book recommendations",
-    "cozy reads",
-    "books",
-  ],
-  authors: [{ name: "The Cozy Corner" }],
-  openGraph: {
-    title: "The Cozy Corner",
-    description:
-      "A cozy online bookstore with carefully curated book recommendations.",
-    type: "website",
-    siteName: "The Cozy Corner",
-  },
+    "The Cozy Corner is a cozy online bookstore offering hand-picked book recommendations for readers who love warm and thoughtful stories.",
 };
 
 export default function RootLayout({
@@ -45,40 +30,41 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-zinc-50 text-zinc-900`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-sky-50 text-emerald-900`}
       >
         {/* Header */}
-        <header className="border-b bg-white sticky top-0 z-50">
+        <header className="bg-emerald-50 border-b border-emerald-100">
           <div className="mx-auto max-w-6xl flex justify-between items-center px-6 py-4">
-            <Link href="/" className="text-lg font-semibold tracking-tight">
+            <Link
+              href="/"
+              className="text-lg font-semibold text-emerald-900"
+            >
               The Cozy Corner
             </Link>
 
-            <nav className="flex gap-6 text-sm text-zinc-600">
-              <Link href="/" className="hover:text-zinc-900">
+            <nav className="flex gap-6 text-sm text-emerald-700">
+              <Link href="/" className="hover:text-emerald-900">
                 Home
               </Link>
-              <Link href="/about" className="hover:text-zinc-900">
+              <Link href="/about" className="hover:text-emerald-900">
                 About
               </Link>
-              <Link href="/books" className="hover:text-zinc-900">
+              <Link href="/books" className="hover:text-emerald-900">
                 Books
               </Link>
-              <Link href="/contact" className="hover:text-zinc-900">
+              <Link href="/contact" className="hover:text-emerald-900">
                 Contact
               </Link>
             </nav>
           </div>
         </header>
 
-        {/* Main content */}
-        <main className="mx-auto max-w-6xl px-6 py-10">
-          {children}
-        </main>
+        {/* Main */}
+        <main>{children}</main>
 
         {/* Footer */}
-        <footer className="border-t bg-white">
-          <div className="mx-auto max-w-6xl px-6 py-6 text-center text-sm text-zinc-500">
+        <footer className="bg-emerald-50 border-t border-emerald-100">
+          <div className="mx-auto max-w-6xl px-6 py-8 text-center text-sm text-emerald-700">
             © 2026 The Cozy Corner. All rights reserved.
           </div>
         </footer>
