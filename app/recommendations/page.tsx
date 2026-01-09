@@ -7,28 +7,28 @@ const books = [
   {
     title: "Project Hail Mary",
     author: "Andy Weir",
-    image: "/books/project-hail-mary.jpg",
+    image: "/books/project-hail-mary.webp",
     description:
       "A science-driven yet deeply human story about survival, friendship, and hope beyond Earth.",
   },
   {
     title: "Pride and Prejudice",
     author: "Jane Austen",
-    image: "/books/pride-and-prejudice.jpg",
+    image: "/books/pride-and-prejudice.webp",
     description:
       "A timeless romance exploring love, class, and personal growth with wit and warmth.",
   },
   {
     title: "The Great Gatsby",
     author: "F. Scott Fitzgerald",
-    image: "/books/the-great-gatsby.jpg",
+    image: "/books/the-great-gatsby.webp",
     description:
       "A reflective look at ambition, love, and the illusion of the American Dream.",
   },
   {
     title: "Moby-Dick",
     author: "Herman Melville",
-    image: "/books/moby-dick.jpg",
+    image: "/books/moby-dick.webp",
     description:
       "A powerful classic about obsession, fate, and humanity’s struggle against nature.",
   },
